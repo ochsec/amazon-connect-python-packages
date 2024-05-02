@@ -5,7 +5,6 @@ from pg8000.dbapi import ProgrammingError, InterfaceError
 class PGClient:
 
     def __init__(self, host, database, password, user='postgres', port=5432) -> None:
-        load_dotenv()
         self.db_params = {
             "host": host,
             "database": database,
